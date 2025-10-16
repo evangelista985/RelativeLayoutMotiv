@@ -52,19 +52,16 @@
         />
 
     <TextView
-        android:id="@+id/text_saldacao"
-        android:layout_below="@+id/view_inic"
+        android:id="@+id/text_view_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Olá, Kotlin"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:layout_below="@+id/view_inic"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        />
+        android:textSize="20sp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/text_frase"
-        android:layout_below="@+id/text_saldacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Riscos devem ser corridos, porque o maior perigo é não arriscar nada!"
