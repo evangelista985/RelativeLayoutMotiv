@@ -51,7 +51,7 @@
     <TextView
         android:id="@+id/text_saldacao"
         android:layout_below="@+id/view_inic"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Olá, Kotlin"
         android:textStyle="bold"
