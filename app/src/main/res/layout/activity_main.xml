@@ -10,9 +10,12 @@
     <View
         android:id="@+id/view_inic"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:background="#9C27B0"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/purple"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         />
 
     <ImageView
@@ -20,8 +23,10 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:src="@drawable/infinito"
-        android:layout_alignParentStart="true"
-        android:layout_margin="16dp"
+        android:layout_alignTop="@+id/view_inic"
+        android:layout_alignBottom="@+id/view_inic"
+        android:layout_marginStart="32dp"
+        app:tint="@color/white"
         />
 
     <ImageView
@@ -31,9 +36,8 @@
         android:src="@drawable/carinha"
         android:layout_alignBottom="@id/view_inic"
         android:layout_alignTop="@id/view_inic"
-        android:layout_alignEnd="@id/view_inic"
-        android:layout_alignParentStart="true"
-        android:layout_margin="6dp"
+        android:layout_centerHorizontal="true"
+        app:tint="@color/white"
         />
     <ImageView
         android:id="@+id/image_sol"
@@ -42,58 +46,61 @@
         android:src="@drawable/solzinho"
         android:layout_alignBottom="@id/view_inic"
         android:layout_alignTop="@id/view_inic"
-        android:layout_alignBaseline="@id/view_inic"
         android:layout_alignParentEnd="true"
-        android:layout_margin="6dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="32dp"
+        app:tint="@color/white"
         />
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/text_saldacao"
         android:layout_below="@+id/view_inic"
+=======
+        android:id="@+id/text_view_nome"
+>>>>>>> f5a03922365e579250d9d223501c9707eb615c7a
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Olá, Kotlin"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:layout_below="@+id/view_inic"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        />
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/text_frase"
-        android:layout_below="@+id/text_saldacao"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Riscos devem ser corridos, porque o maior perigo é não arriscar nada!"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_margin="16dp"
         />
     <View
         android:id="@+id/view_risco"
         android:layout_below="@+id/text_frase"
-        android:layout_width="200dp"
+        android:layout_width="128dp"
         android:layout_height="5dp"
+        android:background="@color/purple"
+        android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:background="#9C27B0"
-        android:layout_marginTop="50dp"
+        android:elevation="4dp"
+
+
         />
     <Button
         android:id="@+id/button"
-        android:layout_below="@+id/view_risco"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="NOVA FRASE"
         android:textSize="17sp"
         android:textStyle="bold"
+        android:backgroundTint="@color/purple"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="#9C27B0"
-        android:layout_marginTop="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
         app:cornerRadius="10dp"
         />
-
 
 </RelativeLayout>

@@ -20,7 +20,11 @@
         android:textSize="30sp"
         />
     <EditText
+<<<<<<< HEAD
         android:id="@+id/edt_nome"
+=======
+        android:id="@+id/editTextNome"
+>>>>>>> f5a03922365e579250d9d223501c9707eb615c7a
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Qual seu nome?"
@@ -32,7 +36,11 @@
         android:textStyle="bold"
         />
     <Button
+<<<<<<< HEAD
         android:id="@+id/btn_salvar"
+=======
+        android:id="@+id/buttonSave"
+>>>>>>> f5a03922365e579250d9d223501c9707eb615c7a
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:hint="SALVAR"
@@ -43,6 +51,7 @@
         android:textSize="17sp"
         app:cornerRadius="10dp"
         android:textStyle="bold"
+
         />
 
     

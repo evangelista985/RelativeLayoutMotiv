@@ -20,6 +20,7 @@ class UserActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+<<<<<<< HEAD
         var buttonSalvar = findViewById<Button>(R.id.btn_salvar)
 
         buttonSalvar.setOnClickListener {
@@ -35,3 +36,23 @@ class UserActivity : AppCompatActivity() {
         }
     }
 }
+=======
+
+
+        var btnSave = findViewById<Button>(R.id.buttonSave);
+
+        btnSave.setOnClickListener{
+            var nomeText = findViewById<EditText>(R.id.editTextNome).text;
+            if (nomeText.isEmpty()){
+                Toast.makeText(this,"Digite seu nome", Toast.LENGTH_LONG).show()
+            } else {
+                this.getSharedPreferences("motivacao", MODE_PRIVATE).edit().putString("nome", nomeText.toString()).apply()
+                var intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+        }
+    }
+
+
+}
+>>>>>>> f5a03922365e579250d9d223501c9707eb615c7a
