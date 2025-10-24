@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        var nome = findViewById<TextView>(R.id.text_saldacao)
-        var nomeRecuperacao = this.getSharedPreferences("motiv", MODE_PRIVATE)
+        var nome = findViewById<TextView>(R.id.text_view_nome)
+        var nomeRecuperacao = this.getSharedPreferences("motivacao", MODE_PRIVATE)
             .getString("nome", "Olá, Seja Bem Vindo")
         nome.text = "Olá, " + nomeRecuperacao
         var novaFrase = findViewById<TextView>(R.id.text_frase)
@@ -40,6 +40,23 @@ class MainActivity : AppCompatActivity() {
             imagemHappy.setColorFilter(ContextCompat.getColor(this, R.color.black))
             imagemSun.setColorFilter(ContextCompat.getColor(this, R.color.black))
 
+            var fraseSorteada = FraseRepository.getFrase(0)
+            novaFrase.text = fraseSorteada
+
+        }
+        imagemHappy.setOnClickListener {
+            imagemAll.setColorFilter(ContextCompat.getColor(this, R.color.black))
+            imagemHappy.setColorFilter(ContextCompat.getColor(this, R.color.white))
+            imagemSun.setColorFilter(ContextCompat.getColor(this, R.color.black))
+            var fraseSorteada = FraseRepository.getFrase(1)
+            novaFrase.text = fraseSorteada
+        }
+        imagemSun.setOnClickListener {
+            imagemAll.setColorFilter(ContextCompat.getColor(this, R.color.black))
+            imagemHappy.setColorFilter(ContextCompat.getColor(this, R.color.black))
+            imagemSun.setColorFilter(ContextCompat.getColor(this, R.color.white))
+            var fraseSorteada = FraseRepository.getFrase(2)
+            novaFrase.text = fraseSorteada
         }
         botaoFrase.setOnClickListener {
             var fraseSorteada = FraseRepository.getFrase(0)

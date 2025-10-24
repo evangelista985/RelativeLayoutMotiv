@@ -50,14 +50,8 @@
         android:layout_marginEnd="32dp"
         app:tint="@color/white"
         />
-
     <TextView
-<<<<<<< HEAD
-        android:id="@+id/text_saldacao"
-        android:layout_below="@+id/view_inic"
-=======
         android:id="@+id/text_view_nome"
->>>>>>> f5a03922365e579250d9d223501c9707eb615c7a
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view_inic"
@@ -65,7 +59,7 @@
         android:layout_marginTop="32dp"
         android:textSize="20sp"
         android:textStyle="bold" />
-    <TextView
+        <TextView
         android:id="@+id/text_frase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -86,8 +80,6 @@
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
         android:elevation="4dp"
-
-
         />
     <Button
         android:id="@+id/button"
